@@ -11,7 +11,7 @@ pipeline {
 					url: "http://192.168.168.1:8082/artifactory/docker-local",
 					acceptType: 'TEXT_HTML',
 					httpMode: 'GET',
-					authentication: 'jfrog-token-admin'
+					authentication: 'jfrogdeploy'
 				)
 			}
 		}
