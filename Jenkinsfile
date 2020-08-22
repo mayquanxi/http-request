@@ -11,8 +11,12 @@ pipeline {
 					url: "http://192.168.168.1:8082/artifactory/docker-local",
 					acceptType: 'TEXT_HTML',
 					httpMode: 'GET',
-					authentication: 'jfrogdeploy'
+					authentication: 'jfrogdeploy'  //user in credencial jenkins
+					//requestBody: 'requestbody'
+					consoleLogResponseBody: true
+					outputFile: 'output-jfrog-repo.txt'
 				)
+
 			}
 		}
 	}
