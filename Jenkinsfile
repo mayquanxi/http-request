@@ -22,3 +22,5 @@ pipeline {
 		}
 	}
 }
+
+// info feature of http request : https://www.jenkins.io/doc/pipeline/steps/http_request/#http-request-plugin
