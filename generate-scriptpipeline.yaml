@@ -1,0 +1,5 @@
+#------------generate script in pipeline for http request script---------------
+access on jenkins: Jenkins >> http-request(project) >> Pipeline Syntax
+select httpRequest and add option for generate
+
+httpRequest authentication: 'jfrogdeploy', consoleLogResponseBody: true, contentType: 'TEXT_HTML', ignoreSslErrors: true, responseHandle: 'NONE', url: 'http://192.168.168.1:8082/artifactory/docker-local'
