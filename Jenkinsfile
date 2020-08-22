@@ -13,8 +13,8 @@ pipeline {
 					httpMode: 'GET',
 					authentication: 'jfrogdeploy',  //user in credencial jenkins
 					//requestBody: 'requestbody'
-					consoleLogResponseBody: true,
-					outputFile: 'output-jfrog-repo.txt'
+					consoleLogResponseBody: true,          //show body 
+					outputFile: 'output-jfrog-repo.txt'   //extra contain to outputfile
 				)
 				sh 'cat ./output-jfrog-repo.txt'
 
