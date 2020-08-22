@@ -16,6 +16,7 @@ pipeline {
 					consoleLogResponseBody: true,
 					outputFile: 'output-jfrog-repo.txt'
 				)
+				sh 'cat ./output-jfrog-repo.txt'
 
 			}
 		}
